@@ -5,26 +5,37 @@
     <title>The RGBreaking</title>
     <style>
       body {
-        margin: 20px;
+        margin: 50px;
         height: 1000vh;
       }
       div {
-        color: white;
         width: 300px;
         height: 300px;
-      }
-      #green {
-        background-color: teal;
-        position: fixed;
-        opacity: 0.5;
-      }
-      #different {
         background-color: wheat;
+        position: relative;
+      }
+      .green {
+        background-color: teal;
+        height: 100px;
+        width: 100px;
+        position: relative;
+        top: -10px;
+        left: -10px;
+      }
+      .tomato {
+        background-color: tomato;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
       }
     </style>
   </head>
   <body>
-    <div id="green"></div>
-    <div id="different"></div>
+    <div>
+      <div class="green"></div>
+      <div class="tomato"></div>
+    </div>
   </body>
 </html>
