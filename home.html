@@ -19,8 +19,17 @@
       div > span {
         text-decoration: underline;
       }
-      p + span {
+      p ~ span {
         color: tomato;
+      }
+      input {
+        border: 1px solid wheat;
+      }
+      input:required {
+        border-color: tomato;
+      }
+      input[placeholder~="name"] {
+        background-color: pink;
       }
     </style>
   </head>
@@ -32,7 +41,16 @@
         consequatur corrupti cum, accusamus doloribus asperiores consectetur
         sequi debitis in odio rem! <span>inside</span>
       </p>
+      <address>hi</address>
       <span>hello</span>
+    </div>
+
+    <div>
+      <form>
+        <input type="text" placeholder="First name" />
+        <input type="text" placeholder="Last name" />
+        <input type="password" required placeholder="password" />
+      </form>
     </div>
   </body>
 </html>
