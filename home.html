@@ -9,21 +9,30 @@
         height: 1000vh;
       }
       span {
-        background-color: tomato;
+        background-color: yellowgreen;
+        padding: 5px;
+        border-radius: 10px;
       }
-      span:nth-child(2n + 3) {
-        background-color: teal;
+      p span {
+        color: wheat;
+      }
+      div > span {
+        text-decoration: underline;
+      }
+      p + span {
+        color: tomato;
       }
     </style>
   </head>
   <body>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nulla
+        voluptatibus modi, distinctio dignissimos blanditiis ullam at beatae,
+        consequatur corrupti cum, accusamus doloribus asperiores consectetur
+        sequi debitis in odio rem! <span>inside</span>
+      </p>
+      <span>hello</span>
+    </div>
   </body>
 </html>
