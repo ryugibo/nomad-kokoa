@@ -8,49 +8,50 @@
         margin: 50px;
         height: 1000vh;
       }
-      span {
-        background-color: yellowgreen;
-        padding: 5px;
-        border-radius: 10px;
+      button:active {
+        background-color: tomato;
       }
-      p span {
-        color: wheat;
+      input:focus {
+        background-color: tomato;
       }
-      div > span {
-        text-decoration: underline;
-      }
-      p ~ span {
+      a:visited {
         color: tomato;
       }
-      input {
-        border: 1px solid wheat;
+      a:hover {
+        color: teal;
       }
-      input:required {
-        border-color: tomato;
+      a:focus {
+        color: turquoise;
       }
-      input[placeholder~="name"] {
-        background-color: pink;
+      form {
+        border: 1px solid salmon;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+      }
+      form:focus-within {
+        border-color: seagreen;
+      }
+      form:hover input:focus {
+        background-color: sienna;
       }
     </style>
   </head>
   <body>
     <div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nulla
-        voluptatibus modi, distinctio dignissimos blanditiis ullam at beatae,
-        consequatur corrupti cum, accusamus doloribus asperiores consectetur
-        sequi debitis in odio rem! <span>inside</span>
-      </p>
-      <address>hi</address>
-      <span>hello</span>
+      <button>hello</button>
     </div>
-
     <div>
-      <form>
-        <input type="text" placeholder="First name" />
-        <input type="text" placeholder="Last name" />
-        <input type="password" required placeholder="password" />
-      </form>
+      <input type="text" />
+      <input type="text" />
     </div>
+    <div>
+      <a href="https://apple.com">Go to apple </a>
+    </div>
+    <form>
+      <input type="text" />
+      <input type="text" />
+      <input type="text" />
+    </form>
   </body>
 </html>
