@@ -4,54 +4,32 @@
     <meta charset="utf-8" />
     <title>The RGBreaking</title>
     <style>
+      :root {
+        --main-color: #fcce00;
+        --default-border: 1px solid var(--main-color);
+      }
       body {
         margin: 50px;
         height: 1000vh;
       }
-      button:active {
-        background-color: tomato;
+      p {
+        background-color: var(--main-color);
       }
-      input:focus {
-        background-color: tomato;
-      }
-      a:visited {
-        color: tomato;
-      }
-      a:hover {
-        color: teal;
-      }
-      a:focus {
-        color: turquoise;
-      }
-      form {
-        border: 1px solid salmon;
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-      }
-      form:focus-within {
-        border-color: seagreen;
-      }
-      form:hover input:focus {
-        background-color: sienna;
+      a {
+        color: var(--main-color);
+        border: var(--default-border);
       }
     </style>
   </head>
   <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ullam aliquid,
+      suscipit accusamus, totam explicabo neque illo dicta voluptates minus
+      assumenda voluptatibus voluptas illum placeat esse. Eveniet blanditiis
+      soluta ea.
+    </p>
     <div>
-      <button>hello</button>
+      <a href="#">website</a>
     </div>
-    <div>
-      <input type="text" />
-      <input type="text" />
-    </div>
-    <div>
-      <a href="https://apple.com">Go to apple </a>
-    </div>
-    <form>
-      <input type="text" />
-      <input type="text" />
-      <input type="text" />
-    </form>
   </body>
 </html>
