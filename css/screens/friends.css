@@ -28,3 +28,15 @@
   justify-content: space-between;
   color: var(--grey-text-color);
 }
+
+#splash-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 132px;
+}
