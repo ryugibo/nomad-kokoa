@@ -44,10 +44,20 @@
   margin-bottom: 25px;
 }
 
+@keyframes animationOtherMessage {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: none;
+  }
+}
+
 .message-row {
   width: 100%;
   display: flex;
   margin-bottom: 25px;
+  animation: animationOtherMessage 0.5s ease-in-out;
 }
 
 .message-row img {
@@ -82,8 +92,18 @@
   font-size: 14px;
 }
 
+@keyframes animationOwnMessage {
+  from {
+    transform: translateX(100px);
+  }
+  to {
+    transform: none;
+  }
+}
+
 .message-row--own {
   justify-content: flex-end;
+  animation: animationOwnMessage 0.5s ease-in-out;
 }
 
 .message-row--own .message__bubble {
