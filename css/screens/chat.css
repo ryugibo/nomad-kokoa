@@ -201,3 +201,7 @@
 .reply:focus-within {
   transform: translateY(80px);
 }
+
+.chat__padding {
+  height: 100px;
+}
